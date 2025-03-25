@@ -1,0 +1,27 @@
+<!-- Write a script to define two JSON object named as division 1 and division 2 having an array to store name of the students this names should be
+     arrange in ascending order and display it in console.First concat both object -->
+
+<html>
+    <head>
+        <script>
+            var div={
+                "division1":
+                {
+                    "name":["A","X","Y"]
+                },
+                
+                "division2":
+                {
+                    "name":["B","W","Z"]
+                }
+            }
+
+            div_data = div.division1.name;
+            div_data2 = div.division2.name;
+
+            combined_data = div_data.concat(div_data2).sort();
+
+            console.log(combined_data);
+        </script>
+    </head>
+</html>

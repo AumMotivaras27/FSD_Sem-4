@@ -1,0 +1,22 @@
+<!-- Write one JSON String with date property name and age and print date in IST while clicking on button.-->
+
+<html>
+    <head>
+        <script>
+            function func1(){
+                obj='{"name":"ABC","age":20,"dob":"1998-08-03"}'
+    
+                obj1=JSON.parse(obj);
+                console.log(obj1.name);
+                console.log(obj1.age);
+                console.log(obj1.dob);
+    
+                a=new Date(obj1.dob);
+                console.log(a);
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="func1()">Click Here</button>
+    </body>
+</html>

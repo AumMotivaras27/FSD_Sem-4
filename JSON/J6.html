@@ -1,0 +1,36 @@
+<!-- Consider Below JSON object and fetch values using for-in and for-of loop. -->
+
+<html>
+    <head>
+        <script>
+            var obj={
+                "FSD":[
+                    {
+                        "Topic":"HTML",
+                        "course":"beginer",
+                        "content":["tags","table"]
+                    },
+                    {
+                        "Topic":"CSS",
+                        "course":"beginer",
+                        "content":["tags","form"]
+                    }
+                ]
+            }
+
+            for(x1 of obj.FSD){
+                document.write(x1.Topic+"<br>");
+                document.write(x1.course+"<br>");
+                document.write(x1.content+"<br>");
+                document.write("<br>");
+            }
+
+            for(x in obj.FSD){
+                for(y in obj.FSD[x]){
+                    document.write(obj.FSD[x][y]+"<br>");
+                }
+                document.write("<br>")
+            }
+        </script>
+    </head>
+</html>
